@@ -28,7 +28,7 @@
 			echo "<TD>".$row['CategoryName']."</TD>";
 			echo "<TD>".$row['Unit']."</TD>";
             echo "<TD>".$row['Price']."</TD>";
-            echo "<TD>[<A href=ch05_01.php?id=".$row['ProductID'].">ลบ</A>]</TD>";
+            echo "<TD>[<A href=frm_product_edit.php?id=".$row['ProductID'].">แก้ไข</A>][<A href=ch05_01.php?id=".$row['ProductID'].">ลบ</A>]</TD>";
         echo "</TR>";
     }
     echo "</TABLE>";
