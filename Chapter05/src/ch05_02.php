@@ -2,13 +2,14 @@
     include "connection.php";
     $txtUser=$_POST['txtUser']; // การตั้งค่ารับตัวแปรแบบ POST
     $txtPassword=$_POST['txtPassword']; // การตั้งค่ารับตัวแปรแบบ POST
-    $sql="SELECT user, name FROM users // การนำไปใช้งานในคำสั่ง SQL
-            WHERE user = '$txtUser' AND password = '$txtPassword';"; 
+    $sql="SELECT Name FROM users 
+            WHERE User = '$txtUser' AND Password = '$txtPassword';"; // การนำไปใช้งานในคำสั่ง SQL
     $result=mysqli_query($conn, $sql); 
     mysqli_close($conn);
-    if(mysqli_num_rows($result) >= 1){
-        echo "<META http-equiv='refresh' content='0; url=main.php'>";
+    if(mysqli_num_rows($result) >= 1) {
+        $row=mysqli_fetch_array($result);
+        echo "ยินดีต้อนรับ คุณ ".$row['Name']." เข้าสู่ระบบ";
      } else {
-        echo "<META http-equiv='refresh' content='0; url=error.php'>";}
+        echo "พบข้อผิดพลาด ไม่พบชื่อผู้ใช้ หรือ รหัสผ่านไม่ถูกต้อง";
      }
- ?> 
+ ?>

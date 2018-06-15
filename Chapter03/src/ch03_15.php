@@ -6,7 +6,7 @@
         $ran = rand(0,99);
         echo "<TR align='center'>";
         echo "<TD>".$i."</TD>";
-        echo "<TD>".$dum."</TD>";
+        echo "<TD>".$ran."</TD>";
         echo "</TR>";
         $i++;
     } while($ran%5 != 0);

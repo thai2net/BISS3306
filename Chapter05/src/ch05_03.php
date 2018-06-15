@@ -10,6 +10,6 @@
     echo "File Type: ".$fileType."<BR>";
     echo "File Temp Name: ".$fileTempName."<BR>";
     echo "File Error: ".$fileError."<BR>";
-    echo "File Size: ".$fileSize.;
-    copy($_FILES['txtFile']['tmp_name'], "NewName".".jpg");
+    echo "File Size: ".$fileSize;
+    copy($_FILES['txtFile']['tmp_name'], "NewName".".pdf");
 ?>

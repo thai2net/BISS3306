@@ -1,3 +1,3 @@
 <?php // ตัวอย่างโปรแกรมที่ 2.2 การทดสอบการทำงานของภาษาพีเอชพี
-   echo "Hello PHP";
+   echo "Hello PHP HOME page";
 ?>

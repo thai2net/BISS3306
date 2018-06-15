@@ -1,6 +1,6 @@
 <?php // ตัวอย่างโปรแกรมที่ 3.20 ตัวอย่างการเขียนฟังก์ชันใช้งาน
     function getName() { // ฟังก์ชันอ่านชื่อ
-    return "Surachart Buachum";
+    return "Steve Rogers";
     }
     function printlnName($name) { // ฟังก์ชันรับค่าชื่อมาพิมพ์ค่า
     print("$name<BR>");
