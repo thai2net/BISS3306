@@ -16,6 +16,8 @@
     การส่งส่งค่าผ่าน $_POST[] --> frm_login.html ส่งค่าไปให้กับ ch05_02.php
 ```
 ```
-    การส่งส่งค่าผ่าน $_FILE[] --> frm_files.html ส่งค่าไปให้กับ ch05_03.php โดยใช้ไฟล์ php_tutorial.pdf เป็นไฟล์ทดสอบสำหรับส่งค่า (php_tutorial.pdf สามารถดาวน์โหลดได้ที่: https://www.tutorialspoint.com/php/php_tutorial.pdf)
+    การส่งส่งค่าผ่าน $_FILE[] --> frm_files.html ส่งค่าไปให้กับ ch05_03.php 
+    โดยใช้ไฟล์ php_tutorial.pdf เป็นไฟล์ทดสอบสำหรับส่งค่า 
+    (php_tutorial.pdf สามารถดาวน์โหลดได้ที่: https://www.tutorialspoint.com/php/php_tutorial.pdf)
 ```
 #### 5. ให้ฝึกปฏิบัติเขียนโปรแกรมเพิ่ม แก้ไข ผ่านฟอร์มรับข้อมูล ตามลำดับ ดังนี้
