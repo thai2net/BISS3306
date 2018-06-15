@@ -5,7 +5,6 @@
 <BODY>
 <?php
     include "connection.php";
-    mysqli_query($conn, 'SET character_set_connection=utf8');
     $sql = "SELECT p.*, s.SupplierName, c.CategoryName 
         FROM ((Products p
         INNER JOIN Suppliers s ON p.SupplierID = s.SupplierID)
