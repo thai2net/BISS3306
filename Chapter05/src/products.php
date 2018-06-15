@@ -21,7 +21,7 @@
                 <TH>ราคา</TH>
                 <TH>Action</TH>
 			</TR>";
-    while($row = mysqli_fetch_array($result)){ // เก็บผลลัพธ์ในตัวแปรอาเรย์
+    while($row = mysqli_fetch_array($result)) { // เก็บผลลัพธ์ในตัวแปรอาเรย์
         echo "<TR align='center'>";
 			echo "<TD>".$row['ProductID']."</TD>";
 			echo "<TD>".$row['ProductName']."</TD>";
