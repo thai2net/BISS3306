@@ -18,7 +18,7 @@
 ?>
 <BODY>
 <FORM name="frmSearchProduct" id="frmSearchProduct" method="post" 
-         action="frm_search_product.php">
+         action="ch05_08.php">
 <H3>ฟอร์มค้นหาสินค้า</H3>
 <TABLE>
 <TR><TH>คำค้นหา:</TH>

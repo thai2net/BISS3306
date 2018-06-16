@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 15, 2018 at 06:53 AM
+-- Generation Time: Jun 16, 2018 at 06:57 AM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.2
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_chapter04`
+-- Database: `db_chapter05`
 --
 
 -- --------------------------------------------------------
@@ -61,9 +61,9 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`ProductID`, `ProductName`, `SupplierID`, `CategoryID`, `Unit`, `Price`) VALUES
-(1, 'ปากกา', 1, 1, 'แท่ง', 15),
+(1, 'ปากกา', 1, 1, 'แท่ง', 20),
 (2, 'ดินสอ', 1, 1, 'แท่ง', 10),
-(3, 'ยางลบ', 1, 1, 'ก้อน', 5);
+(3, 'ยางลบ', 1, 1, 'แท่ง', 5);
 
 -- --------------------------------------------------------
 
@@ -89,6 +89,53 @@ CREATE TABLE `suppliers` (
 INSERT INTO `suppliers` (`SupplierID`, `SupplierName`, `ContactName`, `Address`, `City`, `PostalCode`, `Country`, `Phone`) VALUES
 (1, '3M', '-', '-', '-', '-', '-', '-');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `uploadfiles`
+--
+
+CREATE TABLE `uploadfiles` (
+  `FileID` int(11) NOT NULL,
+  `Title` varchar(150) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `FileName` varchar(150) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `TimeStamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `uploadphotos`
+--
+
+CREATE TABLE `uploadphotos` (
+  `PhotoID` int(11) NOT NULL,
+  `ReferenceID` int(11) NOT NULL,
+  `OriginalPhoto` varchar(250) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `MiniPhoto` varchar(250) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `TimeStamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `UserID` int(11) NOT NULL,
+  `User` varchar(50) NOT NULL,
+  `Password` varchar(8) NOT NULL,
+  `Name` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=tis620;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`UserID`, `User`, `Password`, `Name`) VALUES
+(1, 'admin', '12345678', 'Steve Rogers');
+
 --
 -- Indexes for dumped tables
 --
@@ -112,6 +159,24 @@ ALTER TABLE `suppliers`
   ADD PRIMARY KEY (`SupplierID`);
 
 --
+-- Indexes for table `uploadfiles`
+--
+ALTER TABLE `uploadfiles`
+  ADD PRIMARY KEY (`FileID`);
+
+--
+-- Indexes for table `uploadphotos`
+--
+ALTER TABLE `uploadphotos`
+  ADD PRIMARY KEY (`PhotoID`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`UserID`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -132,6 +197,24 @@ ALTER TABLE `products`
 --
 ALTER TABLE `suppliers`
   MODIFY `SupplierID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `uploadfiles`
+--
+ALTER TABLE `uploadfiles`
+  MODIFY `FileID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `uploadphotos`
+--
+ALTER TABLE `uploadphotos`
+  MODIFY `PhotoID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `UserID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
