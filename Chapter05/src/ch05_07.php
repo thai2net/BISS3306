@@ -21,6 +21,7 @@
     $sql="UPDATE UploadFiles SET FileName = '$data' 
             WHERE FileID = '$txtFileID';"; 
     mysqli_query($conn, $sql);
+    echo "Stored file in: "."../uploadfiles/".$data;
     echo "<br><font color='#00FF00'>อัพโหลดไฟล์สำเร็จ</font><br>";
     } else {
         echo "<br><font color='#FF0000'>ไม่สามารถอัพโหลดไฟล์ได้<br></font>";
