@@ -1,0 +1,25 @@
+<HTML>
+    <HEAD>
+    <TITLE>UPLOAD PHOTO</TITLE>
+    <META charset="UTF-8">
+    </HEAD>
+    <BODY>
+    <FORM name="frmPhotoProduct" id="frmPhotoProduct" method="post" enctype="multipart/form-data" action="ch05_06.php">
+    <H3>ฟอร์มอัพโหลดรูปภาพ</H3>
+    <TABLE>
+    <TR>
+        <TH>เลือกภาพ:</TH>
+        <TD>
+            <INPUT name="txtProductID" id="txtProductID" type="hidden" size="50" value="1">
+            <INPUT name="txtPhoto" id="txtPhoto" type="file" size="50">
+            <INPUT name="submit" id="submit" type="submit" value="อัพโหลดภาพ"> 
+        </TD>
+    </TR>
+    <TR>
+        <TD></TD>
+        <TD>**รองรับไฟล์ .jpg ขนาดไม่เกิน 5 Mb.</TD>
+    </TR>
+    </TABLE>
+    </FORM>
+    </BODY>
+</HTML>

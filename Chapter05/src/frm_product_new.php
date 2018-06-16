@@ -26,7 +26,7 @@
         <?php
             while($row_sup=mysqli_fetch_array($result_sup)) {
         ?> 
-            <OPTION value="<?php echo $row_sup['SupplierID'];?>"><?php echo $row_sup['SupplierName']; ?></OPTION>";
+            <OPTION value="<?php echo $row_sup['SupplierID'];?>"><?php echo $row_sup['SupplierName']; ?></OPTION>
         <?php
             }
         ?>
@@ -41,7 +41,7 @@
 		<?php
             while($row_cat=mysqli_fetch_array($result_cat)) {
         ?> 
-            <OPTION value="<?php echo $row_cat['CategoryID'];?>"><?php echo $row_cat['CategoryName']; ?></OPTION>";
+            <OPTION value="<?php echo $row_cat['CategoryID'];?>"><?php echo $row_cat['CategoryName']; ?></OPTION>
         <?php
             }
         ?>

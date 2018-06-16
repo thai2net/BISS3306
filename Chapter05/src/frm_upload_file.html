@@ -1,0 +1,30 @@
+<HTML>
+    <HEAD>
+    <TITLE>UPLOAD FILE</TITLE>
+    <META charset="UTF-8">
+    </HEAD>
+    <BODY>
+    <FORM name="frmUploadFile" id="frmUploadFile" method="post" enctype="multipart/form-data" action="file_up.php">
+    <H3>ฟอร์มอัพโหลดไฟล์เอกสาร</H3>
+    <TABLE>
+    <TR>
+        <TH>หัวข้อของไฟล์:</TH>
+        <TD>
+            <INPUT name="txtTitle" id="txtTitle" type="text" size="50" maxlength="50">
+        </TD>
+    </TR>
+    <TR>
+        <TH>เลือกไฟล์ PDF:</TH>
+        <TD>
+            <INPUT name="txtFile" id="txtFile" type="file" size="50">
+            <INPUT name="submit" id="submit" type="submit" value="อัพโหลดไฟล์ PDF"> 
+        </TD>
+    </TR>
+    <TR>
+        <TD></TD>
+        <TD>**รองรับไฟล์ .pdf ขนาดไม่เกิน 5 Mb.</TD>
+    </TR>
+    </TABLE>
+    </FORM>
+    </BODY>
+</HTML>
