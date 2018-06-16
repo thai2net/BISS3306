@@ -1,4 +1,4 @@
-<?php // ตัวอย่างโปรแกรมที่ 5.6 การอัพโหลดภาพด้วยตัวแปรส่งค่า $_FILES[] // /form/product_photo_up.php
+<?php // ตัวอย่างโปรแกรมที่ 5.6 การอัพโหลดภาพด้วยตัวแปรส่งค่า $_FILES[]
 include "connection.php";
 $txtProductID=$_POST['txtProductID'];
 if(!empty($_FILES['txtPhoto'])){
