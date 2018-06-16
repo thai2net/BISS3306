@@ -1,5 +1,4 @@
 ﻿## [การพัฒนาโปรแกรมบนเว็บสำหรับงานธุรกิจ](README.md)
-## Web Programming Development for Business Application
 #### - [บทที่ 1 ความรู้พื้นฐานเกี่ยวกับการพัฒนาเว็บ](Chapter01/README.md)
 #### - [บทที่ 2 การสร้างเว็บเพจด้วยภาษาเอชทีเอ็มแอล](Chapter02/README.md)
 #### - [บทที่ 3 การพัฒนาโปรแกรมด้วยภาษาพีเอชพี](Chapter03/README.md)
