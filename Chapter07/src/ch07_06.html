@@ -1,13 +1,23 @@
-<HTML> <!--ตัวอย่างโปรแกรมที่ 7.6 การใช้จาวาสคริปต์เขียนข้อมูลแสดงผลบนเอกสารเว็บเพจ-->
-    <HEAD>
-        <TITLE>Javascript: document.write</TITLE>
-        <META charset="UTF-8">
-    </HEAD>
-    <BODY>
-        <SCRIPT language = "JavaScript" type="text/javascript">
-            <!-- 
-            document.write("Hello JavaScript"); 
-            //-->
-        </SCRIPT>
-    </BODY>
+<HTML> <!-- ตัวอย่างโปรแกรมที่ 7.6 การสร้างและเรียกใช้งานฟังก์ชันจาวาสคริปต์ด้วยเหตุการณ์คลิก -->
+<HEAD>
+<TITLE>JavaScript</TITLE>
+<META charset="UTF-8">
+<SCRIPT type="text/javascript" type="text/javascript">
+    <!--
+        function sayHello(name) {
+            confirm("สวัสดีครับ คุณ"+name+" ท่านมีอายุมากกว่า 18 ใช่หรือไม่");
+        }
+        function Redirect() {
+            window.location = "http://www.chandra.ac.th";
+        }
+     //-->
+    </SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+    <INPUT type="button" onClick="sayHello('สุรชาติ')" value="สวัสดีครับ">
+    <INPUT type="button" onClick="Redirect()" value="ไปยังเว็บไซต์">
+    <INPUT type="button" onClick="window.print()" value="ปริ้นท์">  
+</FORM>  
+</BODY>
 </HTML>
