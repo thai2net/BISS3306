@@ -1,26 +1,24 @@
-<HTML> <!--ตัวอย่างโปรแกรมที่ 7.5 การใช้คลาสของซีเอสเอสเพื่อควบคุมการแสดงผลบนเว็บเพจ-->
-    <HEAD>
-    <TITLE>CSS External Style</TITLE>
-    <META charset="UTF-8">
-    <STYLE>
-       BODY { ackground-color: lightgray;}
-       H1.title1 { color: blue; text-align: center; }
-       H1.title2 { color: green; text-align: center; }
-       P { font-family: verdana; font-size: 20px; }
-          P.a { color: blue; background-color: lightblue; }
-          P.b { color: green; background-color: lightgreen; }
-        </STYLE>
+<HTML> <!-- ตัวอย่างโปรแกรมที่ 7.5 การควบคุมการวนรอบโดยใช้ภาษาจาวาสคริปต์ -->
+<HEAD>
+<TITLE>JavaScript</TITLE>
+<META charset="UTF-8">
 </HEAD>
 <BODY>
-<H1 class="title1">วัดธรรมามูลวรวิหาร</H1>
-<P class="a">
-   วัดธรรมามูลวรวิหารตั้งอยู่บริเวณเชิงเขาธรรมามูลริมฝั่งซ้ายของแม่น้ำเจ้าพระยา 
-   เป็นวัดโบราณประดิษฐานพระพุทธรูปที่สำคัญคู่บ้านคู่เมืองชื่อ หลวงพ่อธรรมจักร
-</P>
-<H1 class="title2">วัดปากคลองมะขามเฒ่า</H1>
-<P class="b">
-   ชื่อวัดปากคลองมะขามเฒ่าเรียกมาจากเดิมมีต้นมะขามเก่าแก่อยู่ริมแม่น้ำหน้าวัด
-   วัดนี้มีความสำคัญ คือ เคยมีพระเกจิอาจารย์ชื่อดังที่ชาวบ้านรู้จักในนามหลวงปู่ศุข
-</P>
+    <SCRIPT type="text/javascript" type="text/javascript">
+    <!--
+        var count = 0;
+        while (count < 5) {
+           document.write("WHILE LOOP: Current Count: " + count + "<BR>");
+           count++;
+        }
+        do {
+           document.write("DO...WHILE LOOP: Current Count: " + count + "<BR>");
+           count--;
+        } while(count > 0);
+        for(count = 1; count < 5; count++) {
+           document.write("FOR LOOP: Current Count: " + count + "<BR>");
+        }
+     //-->
+    </SCRIPT>
 </BODY>
-</HTML>    
+</HTML>
