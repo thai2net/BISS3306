@@ -1,23 +1,31 @@
-<HTML> <!--ตัวอย่างโปรแกรมที่ 7.7 การประกาศตัวแปรและใช้ตัวดำเนินการในภาษาจาวาสคริปต์-->
-    <HEAD>
-        <TITLE>JavaScript</TITLE>
-        <META charset="UTF-8">
-    </HEAD>
-    <BODY>
-        <SCRIPT type="text/javascript" type="text/javascript">
-        <!--
-            var a = 40;
-            var b = 15;
-            var c = "TEXT";
-          var linebreak = "<BR>";
-            result = a + b; document.write(result); document.write(linebreak);
-            result = a - b; document.write(result); document.write(linebreak);
-            result = a / b; document.write(result); document.write(linebreak);
-            result = a % b; document.write(result); document.write(linebreak);
-            result = a + b + c; document.write(result); document.write(linebreak);
-        result = ++a; document.write(result); document.write(linebreak);
-        result = --b; document.write(result); document.write(linebreak);
-     //-->
-    </SCRIPT>
+<HTML> <!-- ตัวอย่างโปรแกรมที่ 7.7 การตรวจสอบค่าว่างบนฟอร์มด้วยจาวาสคริปต์ -->
+<HEAD>
+<TITLE>JavaScript</TITLE>
+<META charset="UTF-8">
+<SCRIPT type="text/javascript" type="text/javascript">
+<!--
+ function chkSubmit() {
+    if(document.frmForm.txtName.value == ""){
+      alert('กรุณาป้อนข้อมูล username');
+      document.frmForm.txtName.focus();
+      return false;
+    }
+    if(document.frmForm.txtPassword.value == ""){
+      alert('กรุณาป้อนข้อมูล password');
+      document.frmForm.txtPassword.focus();
+      return false;
+    }
+    document.frmForm.submit();
+ }
+//-->
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM name = "frmForm" id = "frmForm" method = "post" 
+           onSubmit="JavaScript: return chkSubmit();" action = "main.html">
+   username: <INPUT name="txtName" id = "txtName"  type="text"><BR>  
+   password: <INPUT name="txtPassword" id="txtPassword" type="password">
+   <BR><INPUT type="submit" value="เข้าสู่ระบบ">
+</FORM> 
 </BODY>
-</HTML>   
+</HTML>
